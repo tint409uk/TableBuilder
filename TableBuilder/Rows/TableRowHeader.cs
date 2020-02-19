@@ -1,4 +1,5 @@
-﻿using TableBuilder.Cells;
+﻿using System;
+using TableBuilder.Cells;
 
 namespace TableBuilder.Rows
 {
@@ -6,10 +7,8 @@ namespace TableBuilder.Rows
     {
         internal TableRowHeader(Table<TRowModel> parentTable) : base(parentTable) { }
 
-        protected override string RenderCell(int columnIndex)
-        {
+        internal override string RenderRow() => "".PadRight(_tableWidth, '-') + Environment.NewLine + base.RenderRow();
 
-            return CellImplementors[columnIndex].RenderCell();
-        }
+        protected override string RenderCell(int columnIndex) => CellImplementors[columnIndex].RenderCell();
     }
 }

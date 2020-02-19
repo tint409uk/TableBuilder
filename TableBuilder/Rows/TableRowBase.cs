@@ -13,7 +13,7 @@ namespace TableBuilder.Rows
         protected List<TCellImplementor> _cellImplementors = new List<TCellImplementor>();
         protected Table<TRowModel> _parentTable;
         protected int _rowIndex;
-        private int _tableWidth;
+        protected int _tableWidth;
 
         internal TableRowBase(Table<TRowModel> parent, int rowIndex = -1)
         {
