@@ -3,3 +3,6 @@
  This shows how multiple design patterns help to solve the issue:
  - Strategy Pattern: render different output with different types of column.
  - Bridge Pattern: decouple rendering cell task from the table to columns (so we can have same/different column implementation for different types of table).
+ 
+ Output of the app display a table as below
+ ![](images/Screenshot_2.png)
