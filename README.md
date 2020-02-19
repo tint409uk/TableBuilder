@@ -9,6 +9,11 @@
  - There will be more and more different formatting for different type of values. Hence, displaying implementations need to be extended easily.
  - Moreover, it should allow easily to extend to have more types of headers / footers (paging footer, total footer).
  
+ How to run:
+ - Get all source code.
+ - Check if you can use .NET Core 3.1.
+ - Hit F5 to run, you should be able to see below screenshot as program run.
+ 
  What Next:
  - I'd like to use decoration pattern to demonstrate how we can build header grouping that build on top of normal header.
  - In the demo, there are only 3 types of column (int, money, string), there hopefully will be more types, as well as more options.
